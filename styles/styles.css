@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(87, 168, 94);
+}
+
+.section-main{
+    width: 80%;
+    margin: 100px auto;
+}
+.section-main img{
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
