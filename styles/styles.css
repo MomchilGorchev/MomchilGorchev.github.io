@@ -1,9 +1,19 @@
 body{
+    font-family: 'Asap', sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
     background: rgb(87, 168, 94);
 }
-
+h1{
+    font-size: 45px;
+    font-family: 'Flamenco', cursive;
+    margin: 30px;
+}
+p a{
+    text-decoration: none;
+    color: #4B5748;
+}
 .section-main{
     width: 80%;
     margin: 100px auto;
@@ -13,4 +23,7 @@ body{
     max-width: 600px;
     display: block;
     margin: 0 auto;
+}
+.section-main.imac img{
+    max-width: 800px;
 }
