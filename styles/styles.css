@@ -17,6 +17,7 @@ p a{
 .section-main{
     width: 80%;
     margin: 100px auto;
+    position: relative;
 }
 .section-main img{
     width: 100%;
@@ -27,3 +28,31 @@ p a{
 .section-main.imac img{
     max-width: 800px;
 }
+.section-main.mcbook-slider{
+    width: 600px;
+}
+.section-main.mcbook-slider .slider-content{
+    width: 458px;
+    height: 286px;
+    background: url('../img/slider1.jpg') no-repeat left center transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+@-webkit-keyframes draw {
+    0%{
+        stroke-dashoffset: 50;
+    }
+
+    100%{
+        stroke-dashoffset: 5;
+    }
+}
+path{
+    animation: draw 10s;
+    stroke-dasharray: 50;
+
+}
+
