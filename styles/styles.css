@@ -8,7 +8,7 @@ body{
 h1{
     font-size: 45px;
     font-family: 'Flamenco', cursive;
-    margin: 30px;
+    margin: 100px auto;
 }
 p a{
     text-decoration: none;
