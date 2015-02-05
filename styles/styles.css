@@ -1,3 +1,6 @@
+html{
+    font-size: 100%;
+}
 body{
     font-family: 'Asap', sans-serif;
     text-align: center;
@@ -6,9 +9,9 @@ body{
     background: rgb(87, 168, 94);
 }
 h1{
-    font-size: 45px;
+    font-size: 3rem;
     font-family: 'Flamenco', cursive;
-    margin: 100px auto;
+    margin-top: 45%;
 }
 p a{
     text-decoration: none;
