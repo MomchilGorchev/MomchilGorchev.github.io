@@ -1,0 +1,58 @@
+<!doctype>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testing, testing 1, 2, 3</title>
+        <link href='http://fonts.googleapis.com/css?family=Flamenco|Asap' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/styles.css" />
+
+    </head>
+    <body>
+        <h1>Coming soon... </h1>
+        <!--Heyyy-->
+        <!--<p>Code snippets by <a href="https://github.com/MomchilGorchev" ><em>Momchil Gorchev</em></a></p>-->
+        <!--<p>Sliders, plugins and generally useful, abstracted, reusable JS and SCSS code.</p>-->
+        <!--<p><em>Coming soon!</em></p>-->
+        <!--<ul class="controls">-->
+            <!--<li class="slider-controls prev"><a href="#">Prev</a></li>-->
+            <!--<li class="slider-controls next"><a href="#">Next</a></li>-->
+        <!--</ul>-->
+        <!--<div class="section-main mcbook-slider">-->
+
+            <!--<div class="slider-content"></div>-->
+            <!--<img src="img/macbook.png" alt="img"/>-->
+        <!--</div>-->
+        <!--<div class="section-main imac">-->
+            <!--<img src="img/imac.png" alt="img"/>-->
+        <!--</div>-->
+    <!--<script>-->
+        <!--(function(){-->
+            <!--'use strict';-->
+
+
+            <!--var slider = document.querySelector('.slider-content'),-->
+                <!--prevControl = document.querySelector('li.prev'),-->
+                <!--nextControl = document.querySelector('li.next');-->
+
+            <!--var controls = document.getElementsByClassName('slider-controls');-->
+            <!--//console.log(controls);-->
+
+            <!--for(var i = 0; i < controls.length; i++){-->
+                <!--controls[i].addEventListener('click', function(){-->
+                    <!--var direction = this.classList[1];-->
+                    <!--if(direction === 'prev'){-->
+                        <!--// TODO implement BG moving-->
+                    <!--}-->
+                    <!--else if(direction === 'next'){-->
+                        <!--console.log('Going forward');-->
+                    <!--}-->
+                <!--});-->
+            <!--}-->
+        <!--})();-->
+
+
+    <!--</script>-->
+    </body>
+</html>
