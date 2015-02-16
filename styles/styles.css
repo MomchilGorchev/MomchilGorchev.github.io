@@ -46,7 +46,7 @@ p a{
 
 @-webkit-keyframes draw {
     0%{
-        stroke-dashoffset: 350;
+        stroke-dashoffset: 550;
     }
 
     100%{
@@ -56,16 +56,18 @@ p a{
 @keyframes draw{
     0%{
         stroke-dashoffset: 550;
+        fill:none;
     }
 
     100%{
         stroke-dashoffset: 50;
+        fill: #627582;
     }
 }
 path{
-    -webkit-animation: draw 5s;
+    -webkit-animation: draw 10s;
     animation: draw 10s;
-    stroke-dasharray: 350;
+    stroke-dasharray: 550;
 }
 
 #scene{
@@ -81,3 +83,9 @@ path{
     position: absolute;
 }
 
+#scene li svg#main-rocket{
+    width: 150px;
+    height:150px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
