@@ -330,11 +330,30 @@
         }
         /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+        video#bgvid {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url(img/videoframe1.jpg) no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body class="background error-page-wrapper background-color ">
 <div class="grid__img">
-    <img class="tilt-effect" src="https://download.unsplash.com/photo-1430132594682-16e1185b17c5" alt="bg-image" />
+    <!--<img class="tilt-effect" src="https://download.unsplash.com/photo-1430132594682-16e1185b17c5" alt="bg-image" />-->
+    <video autoplay loop poster="img/videoframe1.jpg" id="bgvid">
+        <source src="img/videobg.webm" type="video/webm">
+        <source src="img/videobg.mp4" type="video/mp4">
+    </video>
 </div>
 <center>
     <div class="content-container shadow">
