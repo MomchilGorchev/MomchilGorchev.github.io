@@ -19,13 +19,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-        function setSwitchValue(id, value){
-            var _this = document.querySelector('#'+ id);
-            var newValue = value === 'on' ? 'off' : 'on';
-            _this.setAttribute('value', newValue);
-        }
-    </script>
 </head>
 <body id="page-top">
 <!-- Example navigation bar -->
@@ -177,14 +170,20 @@
 <script src="js/scene2.js"></script>
 <!-- endbuild -->
 <script>
-    document.addEventListener('DOMContentLoaded', function(){
         function updatePreview(value, id){
             var _this = document.querySelector('#'+ id);
             _this.parentNode.querySelector('span').innerHTML = value;
         }
 
+        function setSwitchValue(id, value){
+            var _this = document.querySelector('#'+ id);
+            var newValue = value === 'on' ? 'off' : 'on';
+            _this.setAttribute('value', newValue);
+        }
 
-        document.getElementById('reloadAnimation').addEventListener('click', function(e){
+        document.addEventListener('DOMContentLoaded', function(){
+
+            document.getElementById('reloadAnimation').addEventListener('click', function(e){
 
             var newSidesValue = document.getElementById('sidesController').value;
             var newAnimationSpeed = document.getElementById('speedController').value;
