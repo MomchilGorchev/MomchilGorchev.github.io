@@ -170,28 +170,30 @@
 <script src="js/scene2.js"></script>
 <!-- endbuild -->
 <script>
-    function updatePreview(value, id){
-        var _this = document.querySelector('#'+ id);
-        _this.parentNode.querySelector('span').innerHTML = value;
-    }
+    document.addEventListener('DOMContentLoaded', function(){
+        function updatePreview(value, id){
+            var _this = document.querySelector('#'+ id);
+            _this.parentNode.querySelector('span').innerHTML = value;
+        }
 
-    function setSwitchValue(id, value){
-        var _this = document.querySelector('#'+ id);
-        var newValue = value === 'on' ? 'off' : 'on';
-        _this.setAttribute('value', newValue);
-    }
+        function setSwitchValue(id, value){
+            var _this = document.querySelector('#'+ id);
+            var newValue = value === 'on' ? 'off' : 'on';
+            _this.setAttribute('value', newValue);
+        }
 
-    document.getElementById('reloadAnimation').addEventListener('click', function(e){
+        document.getElementById('reloadAnimation').addEventListener('click', function(e){
 
-        var newSidesValue = document.getElementById('sidesController').value;
-        var newAnimationSpeed = document.getElementById('speedController').value;
-        var polygonAmount = +document.getElementById('polygonsController').value;
-        var opacity = document.getElementById('opacitySwitch').value === 'on' ? true : false;
+            var newSidesValue = document.getElementById('sidesController').value;
+            var newAnimationSpeed = document.getElementById('speedController').value;
+            var polygonAmount = +document.getElementById('polygonsController').value;
+            var opacity = document.getElementById('opacitySwitch').value === 'on' ? true : false;
 
 
-        console.log(opacity);
-        Scene = new CanvasScene(newSidesValue, newAnimationSpeed, polygonAmount, opacity);
+            console.log(opacity);
+            Scene = new CanvasScene(newSidesValue, newAnimationSpeed, polygonAmount, opacity);
 
+        });
     });
 </script>
 </body>
