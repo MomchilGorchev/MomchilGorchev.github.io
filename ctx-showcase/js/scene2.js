@@ -2,8 +2,6 @@
  * Created by momchillgorchev on 12/06/15.
  */
 
-document.addEventListener('DOMContentLoaded', function(){
-
 
     'use strict';
 
@@ -143,6 +141,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // init everything
         constructor.init();
     }
+document.addEventListener('DOMContentLoaded', function(){
 
     // Start everything :)
     var Scene = new CanvasScene(10, 5, 10);
