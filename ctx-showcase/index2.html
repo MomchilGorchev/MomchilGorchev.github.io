@@ -19,22 +19,35 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        /*FA icons fix as the materialize css framework enforce styles*/
+
+        i.fa{
+            line-height: inherit!important;
+            display: inline-block!important;
+            height:inherit!important;
+            font-size:1em!important;
+        }
+    </style>
 </head>
 <body id="page-top">
 <!-- Example navigation bar -->
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="index.html">Colorful circles</a></li>
+    <li><a href="index2.html">Polygon reality</a></li>
+    <li><a href="index3.html">Snowstorm</a></li>
+    <li class="divider"></li>
+    <li><a href="index4.html">Web Audio Visualisation</a></li>
+</ul>
+
 <nav>
     <div class="nav-wrapper">
         <a href="#!" class="brand-logo"><pre> < CANVAS /> <sub>experimental</sub></pre></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Example 1</a></li>
-            <li><a href="index2.html">Example 2</a></li>
-            <li><a href="index3.html">Example 3</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="index.html">Example 1</a></li>
-            <li><a href="index2.html">Example 2</a></li>
-            <li><a href="index3.html">Example 3</a></li>
+
+            <li><a id="dropdown-button" class="dropdown-button" href="#!" data-activates="dropdown1">Examples <i class="fa fa-caret-down"></i></a></li>
         </ul>
     </div>
 </nav>
@@ -162,6 +175,9 @@
 
 <!-- JS Libraries (example)-->
 <!--<script src="js/lib/lib.js"></script>-->
+<!-- Compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 
 <!-- Your local scripts should follow the following pattern to be linted and minified -->
