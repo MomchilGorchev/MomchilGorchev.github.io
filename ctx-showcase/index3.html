@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <link href='http://fonts.googleapis.com/css?family=Abel|Ubuntu' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <!-- /Stylesheets -->
@@ -20,37 +20,35 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        /*FA icons fix as the materialize css framework enforce styles*/
-
         i.fa{
             line-height: inherit!important;
             display: inline-block!important;
             height:inherit!important;
             font-size:1em!important;
         }
-    </style>
+    </style>  
 </head>
 <body id="page-top">
 <!-- Example navigation bar -->
 <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="index.html">Colorful circles</a></li>
-    <li><a href="index2.html">Polygon reality</a></li>
-    <li><a href="index3.html">Snowstorm</a></li>
-    <li class="divider"></li>
-    <li><a href="index4.html">Web Audio Visualisation</a></li>
-</ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="index.html">Colorful circles</a></li>
+        <li><a href="index2.html">Polygon reality</a></li>
+        <li><a href="index3.html">Snowstorm</a></li>
+        <li class="divider"></li>
+        <li><a href="index4.html">Web Audio Visualisation</a></li>
+    </ul>
 
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><pre> < CANVAS /> <sub>experimental</sub></pre></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        <ul class="right hide-on-med-and-down">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><pre> < CANVAS /> <sub>experimental</sub></pre></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
 
-            <li><a id="dropdown-button" class="dropdown-button" href="#!" data-activates="dropdown1">Examples <i class="fa fa-caret-down"></i></a></li>
-        </ul>
-    </div>
-</nav>
+                <li><a id="dropdown-button" class="dropdown-button" href="#!" data-activates="dropdown1">Examples <i class="fa fa-caret-down"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 <div class="container">
 
     <!-- Example header -->
@@ -62,47 +60,29 @@
     <main>
         <canvas id="scene"></canvas>
 
-        <section class="info">
-            <blockquote><p><a href="https://github.com/MomchilGorchev/canvas-fun" class="inline"><i class="fa fa-download"></i> Download source</a></blockquote>
-            <blockquote><p>Highlights</blockquote>
-            <p>
-                The source code for this example can be found on GitHub.<br />
+        <section class="info row">
+            <div class="col s12 m12 l6">
+                <blockquote>
+                    <p>
+                        <a href="https://github.com/MomchilGorchev/canvas-fun" class="inline">
+                            <i class="fa fa-download"></i> Download source
+                        </a>
+                    </p>
+                </blockquote>
+                <blockquote>
+                    <p><a href="http://jsbin.com/kukige/edit?js" target="_blank"  class="inline"><i class="fa fa-edit"></i> Live edit on JSBin</a></p>
+                </blockquote>
+                <blockquote><p><i class="fa fa-list-alt"></i> Highlights</blockquote>
+                <p>
+                    The source code for this example can be found on GitHub.<br />
 
-                This is quite straightforward particle animation. The most interesting part is the TweenMax animation function which dynamically check for the new generated position of each particle and change the alpha value.
+                    This is quite straightforward particle animation. The most interesting part is the TweenMax animation function which dynamically check for the new generated position of each particle and change the alpha value.
 
-            </p>
-            <pre class="code">
-                function animateDot(d){
-
-                    if(d.y <= 0){
-                        d.alpha = Math.random();
-                    }
-                    if(d.x <= 0){
-                        d.alpha = Math.random();
-                    }
-                    var newDy = HEIGHT;
-                    var newXy = Math.random() * WIDTH;
-                    var delay = Math.random() * 5;
-
-                    TweenMax.to(d, 2, {
-                        y: newDy,
-                        x: newXy,
-                        delay: delay,
-                        ease: Power0.easeNone,
-                        onComplete: function(){
-                            if(d.y >= HEIGHT){
-                                d.alpha = 0;
-                                d.y = -10;
-                            }
-                            if(d.x >= WIDTH){
-                                d.alpha = 0;
-                                d.x = -10;
-                            }
-                            animateDot(d);
-                        }
-                    });
-                }
-            </pre>
+                </p>
+            </div>
+            <div class="col s12 m12 l6">
+                <a class="jsbin-embed" href="http://jsbin.com/kukige/embed?js">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+            </div>
         </section>
     </main>
 </div>
@@ -118,10 +98,10 @@
 
 <!-- JS Libraries (example)-->
 <!--<script src="js/lib/lib.js"></script>-->
-<!-- Compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+
 <!-- Your local scripts should follow the following pattern to be linted and minified -->
 <!-- build:js /js/main.min.js -->
 <script src="js/main.js"></script>
