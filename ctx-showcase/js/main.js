@@ -3,7 +3,9 @@
     'use strict';
     console.log('Hello world!');
 
-    $('#dropdown-button').dropdown({
+    var ddb =  $('#dropdown-button');
+
+    ddb.dropdown({
         inDuration: 300,
         outDuration: 225,
         constrain_width: false, // Does not change width of dropdown to that of the activator
